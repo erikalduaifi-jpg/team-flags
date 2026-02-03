@@ -1,5 +1,7 @@
 # Troubleshooting Guide
 
+> **📚 Navigation:** [Docs Index](README.md) | [Week 2: Single Container](WEEK2_SINGLE_CONTAINER.md) | [Week 3: Docker Compose](WEEK3_BOILER_ROOM.md) | **Troubleshooting**
+
 Common issues and solutions for Team Flags EDU.
 
 ---

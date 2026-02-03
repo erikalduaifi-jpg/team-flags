@@ -15,6 +15,18 @@ A Next.js application showcasing modern DevSecOps workflows. This project is use
 
 ---
 
+## 📚 Learning Guides
+
+Detailed step-by-step guides are in the [`docs/`](docs/) folder:
+
+| Guide | Description |
+|-------|-------------|
+| [Week 2: Single Container](docs/WEEK2_SINGLE_CONTAINER.md) | Docker basics - build and run your first container |
+| [Week 3: Docker Compose](docs/WEEK3_BOILER_ROOM.md) | Multi-container orchestration with nginx, app, and MongoDB |
+| [Troubleshooting](docs/TROUBLESHOOTING.md) | Common issues and solutions |
+
+---
+
 ## Quick Start with Docker Compose (Week 3+)
 
 The fastest way to get the full application running locally.
