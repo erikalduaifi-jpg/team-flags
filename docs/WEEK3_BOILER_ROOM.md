@@ -30,9 +30,63 @@ After completing this lab, you will:
 
 ---
 
-## Quick Start: Fork & Run
+## Quick Start: Sync & Run
 
-### Step 1: Fork the Repository
+### Step 1: Sync Your Existing Fork (IMPORTANT!)
+
+> **⚠️ Already have a fork from Week 2?** You do NOT need to fork again!
+> You need to sync your fork with upstream to get the new Docker Compose files.
+
+```bash
+# 1. Go to your existing fork folder
+cd team-flags
+
+# 2. Add upstream (the original repo) - do this only ONCE
+git remote add upstream https://github.com/r87-e/team-flags.git
+
+# 3. Verify upstream was added
+git remote -v
+# You should see:
+# origin    https://github.com/YOUR-USERNAME/team-flags.git (fetch)
+# origin    https://github.com/YOUR-USERNAME/team-flags.git (push)
+# upstream  https://github.com/r87-e/team-flags.git (fetch)
+# upstream  https://github.com/r87-e/team-flags.git (push)
+
+# 4. Fetch updates from upstream
+git fetch upstream
+
+# 5. Merge the changes into your main branch
+git checkout main
+git merge upstream/main
+
+# 6. Push to your fork (optional but recommended)
+git push origin main
+```
+
+> **💡 What's happening here?**
+> - `upstream` = the original repo (r87-e/team-flags) with the latest changes
+> - `origin` = your fork (YOUR-USERNAME/team-flags)
+> - `git fetch upstream` = downloads changes without applying them
+> - `git merge upstream/main` = applies the changes to your code
+
+**If you get merge conflicts:**
+```bash
+# See which files have conflicts
+git status
+
+# Open the files and resolve conflicts manually
+# Look for <<<<<<< HEAD and >>>>>>> upstream/main
+
+# After resolving conflicts:
+git add .
+git commit -m "Merge upstream changes"
+```
+
+---
+
+### Step 1b: New Here? Fork the Repository
+
+> **🆕 First time?** If you do NOT have a fork from before, follow these steps:
 
 ```bash
 # 1. Go to GitHub and fork:
